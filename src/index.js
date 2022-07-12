@@ -75,3 +75,30 @@ ctaButton.textContent = "Get Started";
 const ctaImg = document.querySelector('#cta-img');
 // console.log(ctaImg);
 ctaImg.src = "http://localhost:9000/img/cta.png";
+
+
+const mainContent = document.querySelector(".main-content");
+// console.log(mainContent);
+
+const topContent = mainContent.querySelector(".top-content");
+console.log(topContent.children);
+const featureDiv = topContent.children[0];
+  const featuresH = featureDiv.children[0];
+  featuresH.textContent = "Features";
+  const featuresP = featureDiv.children[1];
+  featuresP.textContent = `Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
+  in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+  scelerisque quis.`
+
+const aboutDiv = topContent.children[1];
+  const aboutH = aboutDiv.children[0];
+  aboutH.textContent="About";
+  const aboutP = aboutDiv.children[1];
+  aboutP.textContent =  `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+            interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.`
+// console.log(featureDiv, aboutDiv);
+// console.log(topContent);
+// const topText = topContent.querySelector(".text-content");
+// console.log(topText.children);
+// topText.children[0].textContent = "Features";
