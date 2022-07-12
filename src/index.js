@@ -154,3 +154,4 @@ const visionDiv = bottomContent.children[2];
 
 const footerLink = document.querySelector('footer').children[0];
 footerLink.textContent = "Copyright Great Idea! 2021";
+footerLink.classList.add('bold');
