@@ -71,3 +71,7 @@ ctaHeader.textContent = 'DOM Is Awesome';
 const ctaButton = cta.querySelector('button');
 // console.log(ctaButton);
 ctaButton.textContent = "Get Started";
+
+const ctaImg = document.querySelector('#cta-img');
+// console.log(ctaImg);
+ctaImg.src = "http://localhost:9000/img/cta.png";
