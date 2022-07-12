@@ -42,4 +42,20 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 console.log('project wired!')
 
 const header = document.querySelector('header');
-console.log(header.children);
+
+
+// header.child[0].textContent = 'Services';
+const navLinks = header.children[0];
+console.log(navLinks);
+console.log(navLinks.children);
+navLinks.children[0].textContent = "Services";
+navLinks.children[1].textContent = "Product";
+navLinks.children[2].textContent = "Vision";
+navLinks.children[3].textContent = "Features";
+navLinks.children[4].textContent = "About";
+navLinks.children[5].textContent = "Contact";
+
+
+const logoImg = document.getElementById('logo-img');
+console.log(logoImg);
+logoImg.src = "http://localhost:9000/img/logo.png"
