@@ -46,7 +46,7 @@ const header = document.querySelector('header');
 
 // header.child[0].textContent = 'Services';
 const navLinks = header.children[0];
-console.log(navLinks);
+console.log(navLinks, "navlinks");
 console.log(navLinks.children);
 navLinks.children[0].textContent = "Services";
 navLinks.children[1].textContent = "Product";
@@ -54,6 +54,18 @@ navLinks.children[2].textContent = "Vision";
 navLinks.children[3].textContent = "Features";
 navLinks.children[4].textContent = "About";
 navLinks.children[5].textContent = "Contact";
+
+const italics = navLinks.querySelectorAll('a');
+console.log(italics);
+
+for(let i = 0; i<italics.length; i++){
+  console.log(italics[i]);
+  italics[i].classList.add('italic');
+}
+
+
+
+
 
 
 const logoImg = document.getElementById('logo-img');
@@ -136,5 +148,9 @@ const visionDiv = bottomContent.children[2];
   console.log(contact);
   contact.children[0].textContent="Contact";
   contact.children[1].textContent = "123 Way 456 Street Somewhere, USA"
-  contact.children[2].textContent = "(888) 888-8888"
+  contact.children[2].textContent = "1 (888) 888-8888"
   contact.children[3].textContent = "sales@greatidea.io"
+  console.log(contact);
+
+const footerLink = document.querySelector('footer').children[0];
+footerLink.textContent = "Copyright Great Idea! 2021";
