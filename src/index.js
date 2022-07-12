@@ -58,4 +58,16 @@ navLinks.children[5].textContent = "Contact";
 
 const logoImg = document.getElementById('logo-img');
 console.log(logoImg);
-logoImg.src = "http://localhost:9000/img/logo.png"
+logoImg.src = "http://localhost:9000/img/logo.png";
+
+const cta = document.querySelector(".cta");
+const ctaText = document.querySelector(".cta-text");
+console.log(cta, ctaText);
+
+const ctaHeader = ctaText.querySelector('h1');
+// console.log(ctaHeader);
+ctaHeader.textContent = 'DOM Is Awesome';
+
+const ctaButton = cta.querySelector('button');
+// console.log(ctaButton);
+ctaButton.textContent = "Get Started";
