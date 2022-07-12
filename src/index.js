@@ -97,8 +97,44 @@ const aboutDiv = topContent.children[1];
   aboutP.textContent =  `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
             interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
             scelerisque quis.`
-// console.log(featureDiv, aboutDiv);
-// console.log(topContent);
-// const topText = topContent.querySelector(".text-content");
-// console.log(topText.children);
-// topText.children[0].textContent = "Features";
+
+
+const middleImg = document.querySelector(".middle-img");
+middleImg.src = `http://localhost:9000/img/accent.png`
+
+const bottomContent = document.querySelector('.bottom-content');
+console.log(bottomContent.children);
+const servicesDiv = bottomContent.children[0];
+console.log(servicesDiv);
+  const servicesH = servicesDiv.children[0];
+  servicesH.textContent = "Services"
+  const servicesP = servicesDiv.children[1];
+  servicesP.textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
+  in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+  scelerisque quis.`
+
+
+
+const productDiv = bottomContent.children[1];
+  const productH = productDiv.children[0];
+  productH.textContent = "Product"
+  const productP = productDiv.children[1];
+  productP.textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+  interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+  scelerisque quis.`
+const visionDiv = bottomContent.children[2];
+  const visionH = visionDiv.children[0];
+  visionH.textContent = "Vision";
+  const visionP = visionDiv.children[1];
+  visionP.textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+  interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+  scelerisque quis.`
+
+
+
+  const contact = document.querySelector(".contact");
+  console.log(contact);
+  contact.children[0].textContent="Contact";
+  contact.children[1].textContent = "123 Way 456 Street Somewhere, USA"
+  contact.children[2].textContent = "(888) 888-8888"
+  contact.children[3].textContent = "sales@greatidea.io"
